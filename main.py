@@ -14,7 +14,7 @@ tile_height = height // 5
 # List to hold all shuffled images for gif creation
 shuffled_images = []
 
-for _ in range(50):  # Create 50 shuffled images
+for _ in range(10):  # Create 10 shuffled images
     tiles = []
 
     # Loop through each tile
