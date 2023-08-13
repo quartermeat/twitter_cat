@@ -51,10 +51,10 @@ for _ in range(50):  # Create 50 shuffled images
 
             new_image.paste(tile, (left, upper))
 
-    new_image.save(f"debug_image_{_}.jpg")
+    new_image.save(f"images/debug_image_{_}.jpg")
 
     shuffled_images.append(new_image)
 
 # Save the shuffled images as an animated gif
-shuffled_images[0].save("shuffled_cat_animation.gif",
+shuffled_images[0].save("images/shuffled_cat_animation.gif",
                         save_all=True, append_images=shuffled_images[1:], optimize=False, duration=100, loop=0)
